@@ -1,19 +1,28 @@
+properties([
+  parameters([
+    string(
+      name: 'TEKST'
+      )
+  ])
+])
+
+
 pipeline {
     agent any 
     stages {
         stage('Build') { 
             steps {
-                echo "Build_2"
+                echo "$TEKST"
             }
         }
         stage('Test') { 
             steps {
-                echo "Test_2"
+                echo "$TEKST"
             }
         }
         stage('Deploy') { 
             steps {
-                 echo "Deploy_2"
+                 echo "$TEKST"
             }
         }
     }
