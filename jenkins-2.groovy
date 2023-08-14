@@ -6,7 +6,7 @@ properties([
       ),
     choice(
       name: 'select:',
-      choices: ['1', '2', '3']
+      choices: ['1', '2', '3'],
       defaultValue: "1"
       )
   ])
